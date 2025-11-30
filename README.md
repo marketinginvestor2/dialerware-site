@@ -1,20 +1,60 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# DialerWare Platform
 
-# Run and deploy your AI Studio app
+The ultimate AI-powered dialing solution for high-velocity sales teams.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1UA3F72cXAYOcV_rPvl_h3iIyOrCuIO-J
+- **Conversational AI Agents**: Hyper-realistic voice bots for automated outreach.
+- **Script Architect**: Generative AI tool to create high-conversion sales scripts using Google's Gemini API.
+- **Real-Time Telemetry**: Advanced analytics for call volume and connection rates.
+- **CRM Integration**: Seamless sync with major CRM platforms.
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Frontend**: React 19, TypeScript, Tailwind CSS
+- **AI Integration**: Google GenAI SDK (Gemini 2.5 Flash, Gemini TTS)
+- **Charts**: Recharts
+- **Icons**: Lucide React
+- **Build Tool**: Vite
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js (v18 or higher)
+- A Google AI Studio API Key
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/dialerware.git
+   cd dialerware
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory and add your API Key:
+   ```
+   API_KEY=your_google_ai_api_key_here
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The artifacts will be generated in the `dist` directory.

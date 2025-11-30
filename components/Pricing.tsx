@@ -5,44 +5,44 @@ import { PricingTier } from '../types';
 
 const tiers: PricingTier[] = [
   {
-    name: "Starter",
-    price: "$499",
+    name: "Standard",
+    price: "$297",
     features: [
-      "2 AI Voice Agents",
-      "Unlimited Inbound Minutes",
-      "5,000 Outbound Minutes",
-      "Basic CRM Integration",
-      "Standard Support",
-      "Local Caller ID Presence"
+      "Up to 3 AI Voice Agents",
+      "Unlimited Inbound Calls",
+      "SMS Automation",
+      "Standard CRM Integration",
+      "Email Support",
+      "Basic Call Analytics"
     ],
     cta: "Start Free Trial"
   },
   {
-    name: "Growth",
-    price: "$1,299",
+    name: "Professional",
+    price: "$497",
     features: [
-      "10 AI Voice Agents",
-      "Unlimited Inbound Minutes",
-      "25,000 Outbound Minutes",
-      "Advanced CRM Sync (2-way)",
-      "Priority Support (24/7)",
-      "Custom Script Architect",
+      "Up to 10 AI Voice Agents",
+      "Advanced Objection Handling",
+      "Custom Voice Cloning",
+      "Priority CRM Sync (2-way)",
+      "Live Transfer Capability",
+      "Priority Support",
       "Sentiment Analysis"
     ],
     cta: "Get Started",
     popular: true
   },
   {
-    name: "Enterprise",
-    price: "Custom",
+    name: "Agency",
+    price: "$997",
     features: [
       "Unlimited AI Agents",
-      "Volume-based Minute Pricing",
-      "Dedicated Success Manager",
-      "Private Label / Whitelabel",
-      "API Access",
-      "Custom Voice Cloning",
-      "SLA Guarantees"
+      "White Label Dashboard",
+      "Sub-Account Management",
+      "API & Webhook Access",
+      "Dedicated Account Manager",
+      "Custom LLM Training",
+      "Wholesale Usage Rates"
     ],
     cta: "Contact Sales"
   }
@@ -58,10 +58,10 @@ export const Pricing: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-sm font-bold text-blue-600 uppercase tracking-widest">Pricing</h2>
           <p className="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">
-            Scale Your Outreach, Not Your Overhead
+            Simple, Transparent Pricing
           </p>
           <p className="mt-4 text-xl text-slate-500 max-w-2xl mx-auto">
-            Choose the plan that fits your volume. All plans include our proprietary anti-spam technology and predictive dialing engine.
+            Choose the plan that fits your growth. Usage is billed separately based on connection minutes to ensure you only pay for performance.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export const Pricing: React.FC = () => {
                   <span className="text-4xl font-extrabold text-slate-900">{tier.price}</span>
                   {tier.price !== 'Custom' && <span className="ml-1 text-slate-500">/month</span>}
                 </div>
-                <p className="mt-2 text-sm text-slate-500">Billed annually</p>
+                <p className="mt-2 text-sm text-slate-500">+ usage fees</p>
               </div>
 
               <ul className="space-y-4 mb-8">

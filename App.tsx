@@ -4,7 +4,6 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Features } from './components/Features';
 import { StatsSection } from './components/StatsSection';
-import { Testimonials } from './components/Testimonials';
 import { Pricing } from './components/Pricing';
 import { FAQ } from './components/FAQ';
 import { CTA } from './components/CTA';
@@ -18,7 +17,6 @@ function App() {
         <Hero />
         <Features />
         <StatsSection />
-        <Testimonials />
         <Pricing />
         <FAQ />
         <CTA />
